@@ -1,5 +1,5 @@
 // +build !alternate
-package main
+package ziping
 import (
 	"archive/zip"
 	"fmt"
