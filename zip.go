@@ -1,5 +1,5 @@
+// +build !alternate
 package main
-
 import (
 	"archive/zip"
 	"fmt"
@@ -16,8 +16,7 @@ func main() {
 	}
 	defer r.Close()
 
-	// Iterate through the files in the archive,
-	// printing some of their contents.
+	
 	for _, f := range r.File {
 		fmt.Printf("Contents of %s:\n", f.Name)
 		rc, err := f.Open()
