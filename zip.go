@@ -8,7 +8,7 @@ import (
 	"os"
 )
 
-func main() {
+func Zipper() {
 	// Open a zip archive for reading.
 	r, err := zip.OpenReader("testdata/readme.zip")
 	if err != nil {

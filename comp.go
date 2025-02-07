@@ -6,7 +6,7 @@ import (
 	"fmt"
 )
 
-func main() {
+func Compare() {
 	// Suppose we have some user input
 	// that may or may not be an empty string
 	userInput1 := ""
