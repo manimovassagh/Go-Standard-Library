@@ -7,6 +7,6 @@ import (
 
 func main() {
 
-	comparing.TryComp()
 	ziping.Zipper()
+	comparing.TryComp()
 }
