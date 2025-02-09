@@ -1,7 +1,5 @@
-//go:build !alternate
-// +build !alternate
 
-package main
+package ziper
 
 import (
 	"archive/zip"
