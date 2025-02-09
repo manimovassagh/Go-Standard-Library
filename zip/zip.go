@@ -1,5 +1,8 @@
+//go:build !alternate
 // +build !alternate
-package ziping
+
+package main
+
 import (
 	"archive/zip"
 	"fmt"
@@ -16,7 +19,6 @@ func Zipper() {
 	}
 	defer r.Close()
 
-	
 	for _, f := range r.File {
 		fmt.Printf("Contents of %s:\n", f.Name)
 		rc, err := f.Open()
@@ -30,4 +32,8 @@ func Zipper() {
 		rc.Close()
 		fmt.Println()
 	}
+}
+
+func main() {
+	Zipper()
 }
